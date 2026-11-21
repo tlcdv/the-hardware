@@ -98,9 +98,12 @@ rows say yes.
 
 ## Film
 
-The film of this band is linked here and in the [Films table](../../README.md#films) after it is
-published on YouTube. The band shots in it are renders of this CAD. The brain waves in it are open
-PhysioNet data, not recorded with the band.
+[![Print an EEG headband and see your blinks and alpha waves, film on YouTube](https://img.youtube.com/vi/5YII1HK1nv0/maxresdefault.jpg)](https://youtu.be/5YII1HK1nv0)
+
+[Print an EEG headband and see your blinks and alpha waves](https://youtu.be/5YII1HK1nv0) (1:06, YouTube) shows the band on the 10-20 ring, the three sizes from one script, the board
+and the battery in their side pods, and the [Open EEG Viewer](../../software/eeg-viewer/) with the band demo. The band shots
+are renders of this CAD. The brain waves in the film are open PhysioNet data, not recorded with the band. A blink is an eye
+signal (EOG), not a brain signal.
 
 ## Build
 

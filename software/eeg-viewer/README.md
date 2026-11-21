@@ -14,6 +14,8 @@ Hosted version: https://theconsciousness.ai/hardware/eeg-viewer/
 
 [Print an EEG headset and watch your brain in the browser](https://youtu.be/r6wWGMYatmw) (1:06, YouTube) shows this viewer as the last part of the open EEG stack, after the [headset frame](../../designs/eeg-headset-frame/) and the board. The viewer shots are frames of the live page playing the open PhysioNet demo recording.
 
+[Print an EEG headband and see your blinks and alpha waves](https://youtu.be/5YII1HK1nv0) (1:06, YouTube) shows the viewer with the [EEG band](../../designs/eeg-band/) and the NPG Lite. The viewer shots are frames of the live page playing the band demo (`?demo=band`, Fp1, O1 and O2 of the open PhysioNet recording).
+
 ## What it does
 
 - Draws every channel live, filtered from 1 to 45 Hz, with a 50 or 60 Hz mains notch.
