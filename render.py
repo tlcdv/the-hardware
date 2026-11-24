@@ -61,6 +61,11 @@ def mesh(part, offset=(0, 0, 0)):
 HEAD = "#2a2d33"           # head model, dark and part transparent
 PINK = "#e64254"           # film key word red-pink (owner 2026-11-19, was #ff6b61), EEG frame and covers
 GLASS = "glass"            # clear part: light tint, neutral white edges (never pink)
+DEVICE = "device"         # printed device parts in the film look (glass + red-coral)
+DEVICE_COLOUR = PINK  # #e64254, owner pick 2026-11-24: render median #cd3b4b, value 0.80
+DEVICE_LIGHT = (0.34, 0.72, 0.5, 10)
+DEVICE_EDGE = (3.2, 1.0, "#ffb3bd", 20)   # light pink rim line: width, opacity, colour, feature angle
+TRACE = "#ff5a6a"          # light path / trace line, film key colour top stop
 
 
 def add_part(plotter, surface, colour, line_opacity=0.55):
@@ -74,6 +79,21 @@ def add_part(plotter, surface, colour, line_opacity=0.55):
                                               manifold_edges=False)
         plotter.add_mesh(edges, color="#f5f5f2", line_width=1.8,
                          opacity=0.85)
+        return
+    if colour == DEVICE:
+        # Film device look (owner 2026-11-24, EEG film still): measured target
+        # hue -6 deg, saturation 0.70, median value 0.80, highlights #e7515d.
+        plotter.add_mesh(surface, color=DEVICE_COLOUR, smooth_shading=True,
+                         ambient=DEVICE_LIGHT[0], diffuse=DEVICE_LIGHT[1],
+                         specular=DEVICE_LIGHT[2], specular_power=DEVICE_LIGHT[3])
+        edges = surface.extract_feature_edges(feature_angle=DEVICE_EDGE[3],
+                                              boundary_edges=True,
+                                              non_manifold_edges=False,
+                                              manifold_edges=False)
+        # Light pink rims on every edge (owner 2026-11-24:
+        # dark edges made the parts read as outlined in black).
+        plotter.add_mesh(edges, color=DEVICE_EDGE[2], line_width=DEVICE_EDGE[0],
+                         opacity=DEVICE_EDGE[1])
         return
     if colour == HEAD:
         plotter.add_mesh(surface, color=HEAD, smooth_shading=True,
@@ -127,7 +147,7 @@ def add_logo(source, target):
 
 
 COLOUR_KEYS = {"coral": CORAL, "cream": CREAM, "board": BOARD, "head": HEAD,
-               "pink": PINK, "glass": GLASS}
+               "pink": PINK, "glass": GLASS, "trace": TRACE, "device": DEVICE}
 
 
 def render_design_views(module, out):
