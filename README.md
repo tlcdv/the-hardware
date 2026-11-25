@@ -17,6 +17,7 @@ Every hardware film is linked here and in the README of its design.
 
 | Film | Design |
 |---|---|
+| [![Can a computer bind rhythms at the speed of light? Film on YouTube](https://img.youtube.com/vi/ESYS1505OEs/mqdefault.jpg)](https://youtu.be/ESYS1505OEs)<br>[Can a computer bind rhythms at the speed of light?](https://youtu.be/ESYS1505OEs) (1:54) | [optical-kuramoto-bench](designs/optical-kuramoto-bench/) |
 | [![Print an EEG headband and see your blinks and alpha waves, film on YouTube](https://img.youtube.com/vi/5YII1HK1nv0/mqdefault.jpg)](https://youtu.be/5YII1HK1nv0)<br>[Print an EEG headband and see your blinks and alpha waves](https://youtu.be/5YII1HK1nv0) (1:06) | [eeg-band](designs/eeg-band/), [eeg-viewer](software/eeg-viewer/) |
 | [![Print an EEG headset and watch your brain in the browser, film on YouTube](https://img.youtube.com/vi/r6wWGMYatmw/mqdefault.jpg)](https://youtu.be/r6wWGMYatmw)<br>[Print an EEG headset and watch your brain in the browser](https://youtu.be/r6wWGMYatmw) (1:06) | [eeg-headset-frame](designs/eeg-headset-frame/), [eeg-viewer](software/eeg-viewer/) |
 | [![A box for a computer that runs on noise, film on YouTube](https://img.youtube.com/vi/6x5qe1VAy_4/mqdefault.jpg)](https://youtu.be/6x5qe1VAy_4)<br>[A box for a computer that runs on noise](https://youtu.be/6x5qe1VAy_4) (1:56) | [tang-nano-9k-case](designs/tang-nano-9k-case/) |

@@ -16,6 +16,16 @@ The build guide is at [/hardware/designs/optical-kuramoto-bench/](https://thecon
 > reflection of it. Keep the shroud on when you do not adjust the optics. Take off rings and
 > watches before you align the mirrors.
 
+## Film
+
+[![Can a computer bind rhythms at the speed of light? Film on YouTube](https://img.youtube.com/vi/ESYS1505OEs/maxresdefault.jpg)](https://youtu.be/ESYS1505OEs)
+
+[Can a computer bind rhythms at the speed of light?](https://youtu.be/ESYS1505OEs) (1:54, YouTube) starts from a thought experiment: nerve signals move at
+most 120 m/s, light in glass is more than a million times faster. It shows three experiments that compute with
+light (Inagaki et al. 2016, Shen et al. 2017, Feldmann et al. 2019), our own rhythm test that failed, and then this
+bench part by part, with the light path through the cube and the two mirrors. The bench shots are renders of this
+CAD. The bench is not printed yet. The scope trace at the end is a Kuramoto simulation, not a measurement.
+
 ## Images
 
 CAD renders, not photos. The dark blocks are simplified models of the bought parts (detector,
